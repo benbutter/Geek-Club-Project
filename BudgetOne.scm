@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME H:\Ben\geek club\BudgetOne.jcf */
+/* JADE COMMAND FILE NAME C:\Users\17282\Desktop\BudgetOne.jcf */
 jadeVersionNumber "7.0.06";
 schemaDefinition
 BudgetOne subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
@@ -12,6 +12,7 @@ libraryDefinitions
 typeHeaders
 	BudgetOne subclassOf RootSchemaApp transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2435;
 	ClassOne subclassOf Object transient, transientsOnly, number = 20494;
+	ClassTwo subclassOf Object number = 2057;
 	GBudgetOne subclassOf RootSchemaGlobal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2436;
 	SBudgetOne subclassOf RootSchemaSession transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2437;
  
@@ -35,6 +36,10 @@ typeDefinitions
 	ClassOne completeDefinition
 	(
 		setModifiedTimeStamp "4741" "7.0.06" 2015:07:03:16:19:16.687;
+	)
+	ClassTwo completeDefinition
+	(
+		setModifiedTimeStamp "17282" "7.0.06" 2015:07:10:16:03:55.045;
 	)
 	Global completeDefinition
 	(
@@ -72,6 +77,7 @@ BudgetOneDb
 		BudgetOne in "_usergui";
 		GBudgetOne in "BudgetOne";
 		ClassOne in "BudgetOne";
+		ClassTwo in "BudgetOne";
 	)
 schemaViewDefinitions
 exportedPackageDefinitions
